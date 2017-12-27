@@ -13,3 +13,9 @@ server {
 启动nginx镜像
 sudo docker run --name wep -d --link app:app -p 80:8010 nginx
 浏览器查看 http://127.0.0.1/weixin/first_app/index 页面正常
+3、进入docker查看调试r
+#　如下命令打出一个ｎｇｉｎｘ的ｄｏｃｋｅｒ
+docker run --name tt -d -t -i nginx
+
+＃ 直接在docker里面运行bash
+docker exec -i -t tt /bin/bash
